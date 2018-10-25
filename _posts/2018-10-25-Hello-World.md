@@ -7,8 +7,7 @@ Hello and welcome to my Dev Blog where I will chronicle the development of my ga
 
 As for what middleware it uses(or in the case of Sol2 & FMOD; will use): Box2D for the physics, Directx11 for graphics, Lua using Sol2 for the scripting, dearIMGUI for the editor, FreeType2 for font rendering, & FMOD for the audio.
 
-As for the editor at its current shape looks like this:
-
+As for the editor, it looks like this right now:
 ![editor_pic]({{ site.baseurl }}/images/JanusEditor251018.png "Editor Picture")
 
 In the editor I can currently create & modify entities and sprites, import textures, and open a level(or map, depending on what you want to call it) to place entities from the Asset Browser into it.
