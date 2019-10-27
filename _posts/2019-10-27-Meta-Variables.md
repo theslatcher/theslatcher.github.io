@@ -29,5 +29,7 @@ Another thing I've worked on is an Animation State Machine, which works like eve
 
 ![asm_pic]({{ site.baseurl }}/images/20191027/AnimationStateMachine.gif "Animation State Machine Gif")
 
+The gif is a little stuttery, on my local computer it isn't, so must be github pages compressing it? Might need to check that out for future gifs.
+
 And that's it for significant updates, bye for now!
 /Marcus
