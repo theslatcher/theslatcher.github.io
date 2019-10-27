@@ -5,7 +5,7 @@ title: Meta Variables, Json, & Animations.
 
 So, I've been working on Meta Variables to stop needing to create, & maintain CopyTo, & Serialize functions in classes all the time. The way it works is when defining an object it registers itself into the MetaTableRegistry, and then if the object has a RegisterMetaVariables() function, it is called to register its variables like so:
 
-``` cpp
+``` c++
 void JSceneComponent::RegisterMetaVariables()
 {
 	MetaTableRegistry::RegisterMetaClassMember<JSceneComponent>(DATA_BINDING(JSceneComponent, myRelativeTransform));
