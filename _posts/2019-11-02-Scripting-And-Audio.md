@@ -3,7 +3,7 @@ layout: post
 title: Scripting, audio, and triggers
 ---
 
-Scripting
+**Scripting**
 
 So, one of the things I've been working on scripting support using sol3 to use lua as the scripting language. To do the C++<->lua binding I'm utilizing my meta tables, which previously only supported variables, so I had to implement functions too.
 
@@ -57,20 +57,29 @@ end
 
 ---
 
-Audio
+**Audio**
+
+Another thing I've been working on is audio support, I utilize FMOD for this, so far you can do this to create a sound from file, and play it:
 
 ``` c++
 if (AudioCoreModule* audioCoreMan = AM_AppManager::GetInstance()->GetModule<AudioCoreModule>())
 {
-	AudioSound sound = audioCoreMan->CreateSound("MissionOver.wav");
+	AudioSoundHandle sound = audioCoreMan->CreateSound("MissionOver.wav");
 	audioCoreMan->PlaySound(sound);
 }
 ```
 
 ---
 
-Triggers, and level changing
+**Triggers, and level changing**
+
+The last thing I've worked on is triggers, and the ability to change levels(add to that the ability to keep certain entities like the player entity, and its associated entities, between levels).
+
+A small .gif showcasing a level change trigger(including a little bug where physics for the player is not resetting between levels, which needs to be fixed):
+
+(gif)
 
 ---
 
-Unfinished.
+Well, that's it for now.
+/Marcus
